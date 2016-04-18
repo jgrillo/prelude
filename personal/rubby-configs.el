@@ -5,10 +5,13 @@
 ;; ruby support.
 
 ;;; Code:
-(prelude-require-packages '(projectile-rails rinari))
+(prelude-require-packages '(enh-ruby-mode projectile-rails rinari))
+
+(setq enh-ruby-program "/usr/bin/ruby")
 
 (add-hook 'ruby-mode-hook
           (lambda ()
+            (enh-ruby-mode)
             (rinari-minor-mode)
             (projectile-rails-mode)))
 

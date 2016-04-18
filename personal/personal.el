@@ -6,6 +6,7 @@
 
 ;;; Code:
 (prelude-require-package 'simpleclip)
+(prelude-require-package 'graphviz-dot-mode)
 
 (require 'company)
 (require 'simpleclip)
